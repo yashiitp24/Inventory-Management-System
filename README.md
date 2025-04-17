@@ -1,2 +1,2 @@
 # Inventory-Management-System
-A website for managing stocks and staffs.
+A website for managing stocks and staffs
