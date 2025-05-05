@@ -1,0 +1,70 @@
+
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Roboto Condensed ;
+            margin:none;
+            padding:none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end; /* align to right */
+            align-items:center;
+            height: 100vh;
+            padding-right: 70px;
+            background-color:rgb(239, 159, 159);
+        }
+
+        .login-box {                        
+            background-color:grey;
+            padding: 40px;
+            border-radius: 90px;
+            box-shadow: 0 0 50px rgba(220, 59, 59, 0.1);
+            width: 270px;
+        }
+
+        h2 {
+            text-align:center;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        button {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color:rgb(11, 116, 220);
+            color:black;
+            border:none;
+            border-radius:50px;
+            cursor:pointer;
+        }
+
+        button:hover {
+            background-color:rgb(45, 159, 74);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form method="POST" action="/login">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Password:</label>
+                <input type="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
